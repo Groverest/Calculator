@@ -1,0 +1,80 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-family: 'Georama', sans-serif;
+    font-size: 62.5%;
+}
+
+.container{
+    display: flex;
+    justify-content: center;/*Centrado horizontal*/
+    align-items: center; /* centrado verticzl*/
+    height: 100vh;
+    padding: 15px;
+    background-image: url(https://www.hp.com/us-en/shop/app/assets/images/uploads/prod/5%20Best%20Coding%20Programs%20for%20Aspiring%20Programmers1650304687858345.jpg);
+}
+
+.calculator{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid gray;
+    font-size: 2rem;
+    background: #3783F9;
+    border-radius: 40px;
+}
+
+.calculator-display{
+    padding: 25px 15px;
+    width: 100%;
+    text-align: right;
+    border: 1px solid gray;
+    overflow-x: auto ;
+    background: #FFFFFF;
+    border-radius: 20px;
+}
+
+.calculator-keypad{
+    display: fex;
+    width: 100%;
+}
+
+.keypad-numbers{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.keypadButton{
+    width: 25%;
+    padding: 15px 0;
+    text-align: center;
+    cursor: pointer;
+    background: #27045B;
+    border: 1px solid gray;
+    border-radius: 10px;
+    color: #FFFFFF;
+
+}
+
+.keypadButton:hover{
+    filter: brightness(80%);/*Baja el brillo al 80%*/
+    transition: filter .25s;
+}
+
+.keypadButton.large{
+    width: 50%;
+}
+
+.keypadButton.yellow{
+    background: #ED8A0A;
+}
+
+.keypadButton.dark{
+    background: #9852F9;
+}
